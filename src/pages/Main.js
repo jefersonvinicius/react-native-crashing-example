@@ -21,6 +21,10 @@ export default function Main() {
           title="Animations"
           onPress={() => navigation.navigate('Animations')}
         />
+        <Button
+          title="Package Json"
+          onPress={() => navigation.navigate('PackageJson')}
+        />
       </View>
       <View>
         <Text style={{color: '#000', textAlign: 'center'}}>

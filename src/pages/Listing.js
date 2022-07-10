@@ -23,7 +23,7 @@ export default function Listing() {
   }
 
   return (
-    <View>
+    <View style={{flex: 1}}>
       <FlatList
         data={data}
         keyExtractor={item => item.id}
