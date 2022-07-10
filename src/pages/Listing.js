@@ -15,7 +15,7 @@ export default function Listing() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    setData(Array.from(new Array(300)).map(() => createEntry()));
+    setData(Array.from({length: 300}).map(() => createEntry()));
   }, []);
 
   function handleItemPress(item) {
