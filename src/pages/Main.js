@@ -1,6 +1,7 @@
 import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {Button, Text, View} from 'react-native';
+import packageJson from '../../package.json';
 
 export default function Main() {
   const navigation = useNavigation();
@@ -20,6 +21,11 @@ export default function Main() {
           title="Animations"
           onPress={() => navigation.navigate('Animations')}
         />
+      </View>
+      <View>
+        <Text style={{color: '#000', textAlign: 'center'}}>
+          Version: {packageJson.version}
+        </Text>
       </View>
     </View>
   );

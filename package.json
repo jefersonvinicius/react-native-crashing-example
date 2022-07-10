@@ -1,6 +1,6 @@
 {
   "name": "crashingtest",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
@@ -8,7 +8,9 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "build": "cd android && ./gradlew assembleRelease && cd .."
+    "build": "cd android && ./gradlew assembleRelease && cd ..",
+    "release": "adb install android/app/build/outputs/apk/release/app-armeabi-v7a-release.apk",
+    "build:release": "yarn build && yarn release"
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.8",
