@@ -13,9 +13,4 @@ public class MainActivity extends ReactActivity {
   protected String getMainComponentName() {
     return "CrashingTest";
   }
-
-  @Override
-  protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(null);
-  }
 }
